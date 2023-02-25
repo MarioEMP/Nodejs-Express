@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('partials/header') %>
+        <title>Hello World</title>
+</head>
+
+<body>
+
+    <%- include('partials/navigation') %>
+
+    <div class="container p-4">
+        <div class="row">
+            <% eventos.forEach(function(eventos){ %>
+                <div class="col-md-4 p-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h2><%= eventos.titulo %></h2>
+                        </div>
+                        <div class="card-body">
+                            <p>
+                                <span>Subido por: </span><%= eventos.usuario %>
+                            </p>
+                            <p>
+                                <span>Fecha: </span><%= eventos.fecha %>
+                            </p>
+                            <img src="<%= eventos.imagen %>" class="card-img-top">
+                            <p>
+                                <%= eventos.info %>
+                            </p>
+                                
+                        </div>
+                        <div class="card-footer">
+                            <a href="/delete/<%= eventos.id %>" class="btn btn-danger">Eliminar</a>
+                        </div>
+                    </div>
+                </div>
+                <% }) %>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

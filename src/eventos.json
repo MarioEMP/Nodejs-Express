@@ -1,0 +1,18 @@
+[
+    {
+        "id": 0.04563871602215497,
+        "titulo": "Concierto",
+        "usuario": "Pepe",
+        "fecha": "2023-02-23",
+        "imagen": "",
+        "info": "40€"
+    },
+    {
+        "id": 0.6574152243137126,
+        "titulo": "Comida",
+        "usuario": "Juan",
+        "fecha": "2023-02-21",
+        "imagen": "",
+        "info": "20€"
+    }
+]
